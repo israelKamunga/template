@@ -1,0 +1,104 @@
+body{
+    box-sizing: border-box;
+}
+nav{
+    position: fixed !important;
+    background-color: transparent;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+    transition: background 0.5s;
+}
+header{
+    display: flex;
+    align-items: center;
+    background:url("../banniere.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+}
+svg{
+    width: 30px;
+    height: auto;
+    margin: 0px 10px;
+}
+
+section p{
+    text-align: justify;
+    text-indent: 15px;
+}
+
+.nav-link{
+    color: white;
+    padding: 5px 5px;
+    margin: 0px 5px;
+    border-radius: 10px;
+    transition: background 0.5s;
+}
+.nav-link:hover{
+    background-color: #0d6efd;
+    color: white;
+}
+@media screen and (min-width:768px){
+    ul{
+        margin-left: auto;
+        margin-right: 80px;
+    }
+    .navbar-brand{
+        margin-left: 50px;
+    }
+    .card-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    section{
+        display: flex;
+    }
+    footer{
+        height: auto;
+    }
+}
+@media screen and (max-width:768px){
+    span{
+        display: none !important;
+    }
+    .navbar-toggler{
+        border: 1px solid white;
+        color: white;
+        padding: 5px 10px;
+    }
+    header{
+        background:url("../banniere.jpg") center no-repeat;
+        background-size: cover;
+        height: 300px;
+    }
+    main div div{
+        height: auto;
+    }
+    nav{
+        position: fixed;
+    }
+    .card{
+        width: 100%;
+    }
+    .col-11{
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .conteneur{
+        display: block !important;
+    }
+    .section1, .section2, .section3{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .section3 p{
+        width: 90%;
+        margin: auto;
+        text-align: justify;
+    }
+
+}
